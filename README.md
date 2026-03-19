@@ -23,6 +23,7 @@ Estimate medical insurance claim amounts based on personal and lifestyle data us
 5. **Model Training:** Linear Regression to predict insurance charges.
 6. **Evaluation:** Used MAE and RMSE, and visualized predictions, residuals, and feature importance.
 7. **Interpretation:** Identified key drivers of insurance costs.
+8. **Feature Transformation:** Applied log and Yeo-Johnson transformations to reduce skewness and stabilize variance in `charges` and `bmi`.
 
 ---
 
@@ -31,6 +32,8 @@ Estimate medical insurance claim amounts based on personal and lifestyle data us
 - **MAE:** Typically between \$3,000–\$4,000 (average absolute error)
 - **RMSE:** Typically between \$6,000–\$7,000 (root mean squared error)
 - **Key Predictors:** Smoking status, age, and BMI have the largest impact on charges.
+- **Transformations:** Applying log and Yeo-Johnson transformations improved model performance and interpretability.
+  
 
 ---
 
@@ -39,6 +42,7 @@ Estimate medical insurance claim amounts based on personal and lifestyle data us
 - **Smokers** and those with higher BMI or older age have much higher predicted charges.
 - **Number of children** and **region** have smaller effects.
 - **Linear Regression** provides a solid baseline, but more complex models could further improve accuracy.
+- **Transforming skewed features** (like charges) is crucial for accurate regression modeling.
 
 ---
 
